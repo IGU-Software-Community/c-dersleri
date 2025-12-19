@@ -13,7 +13,7 @@ Her katılımcı, kendi adına açılmış bir klasörde çalışarak bireysel k
 
 ### Katılım Kuralları
 
-[Katılım Kuralları](https://github.com/IGU-Software-Community/c-dersleri/blob/main/Proje_Kullanim_Klavuzu/Katilim_Kurallari.md)
+[Katılım Kuralları](./Proje_Kullanim_Klavuzu/Katilim_Kurallari.md)
 
 ### PROJE YAPISI
 Her katılımcı için proje ana dizininde bir klasör bulunur.
@@ -35,7 +35,7 @@ ana proje dizini /
 > [!CAUTION]
 > projede bulunan `.git` klasörünü **asla dokunmayın**.
 
-[İndirme ve Düzenleme Sistemi](https://github.com/IGU-Software-Community/c-dersleri/blob/main/Proje_Kullanim_Klavuzu/Indirme_Ve_Duzenleme_Sistemi.md)
+[İndirme ve Düzenleme Sistemi](./Proje_Kullanim_Klavuzu/Indirme_Ve_Duzenleme_Sistemi.md)
 
 ### HEDEFLER
 
