@@ -85,4 +85,11 @@ ana proje dizini /
 
 #### Proje Yöneticileri
 
+- [iguGH2025](https://github.com/iguGH2025)
 - [trs-1342](https://github.com/trs-1342)
+- [sara-rezk](https://github.com/sara-rezk)
+- [qusaitahan2007-debug](https://github.com/qusaitahan2007-debug)
+- [65SH](https://github.com/65SH)
+- [hansasabbagh07](https://github.com/hansasabbagh07)
+- [esmakaradag](https://github.com/esmakaradag)
+- [canerseyn](https://github.com/canerseyn)
