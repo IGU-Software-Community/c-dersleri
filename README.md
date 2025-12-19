@@ -1,6 +1,7 @@
 # C Dersleri (c-dersleri)
 
 ## PROJENİN AMACI
+
 ---
 
 Bu proje, İstanbul Gelişim Üniversitesi Yazılım Mühendisliği 1. sınıf öğrencilerinin C dilinde öğrendiklerini uygulamalı şekilde geliştirmesi ve ortak bir GitHub deposu üzerinden paylaşması amacıyla oluşturulmuştur.
@@ -16,6 +17,7 @@ Her katılımcı, kendi adına açılmış bir klasörde çalışarak bireysel k
 [Katılım Kuralları](./Proje_Kullanim_Klavuzu/Katilim_Kurallari.md)
 
 ### PROJE YAPISI
+
 Her katılımcı için proje ana dizininde bir klasör bulunur.
 
 Örnek yapı:
@@ -67,13 +69,20 @@ ana proje dizini /
   <a href="https://github.com/qusaitahan2007-debug" title="qusaitahan2007-debug">
     <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/qusaitahan2007-debug&h=70&w=70&fit=cover&mask=circle" width="70" height="70" alt="qusaitahan2007-debug"/>
   </a>
-   <a href="https://github.com/65SH" title="65SH">
+  <a href="https://github.com/65SH" title="65SH">
     <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/65SH&h=70&w=70&fit=cover&mask=circle" width="70" height="70" alt="65SH"/>
+  </a>
+  <a href="https://github.com/hansasabbagh07" title="hansasabbagh07">
+    <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/hansasabbagh07&h=70&w=70&fit=cover&mask=circle" width="70" height="70" alt="hansasabbagh07"/>
+  </a>
+  <a href="https://github.com/muhammedelhalit2-eng" title="muhammedelhalit2-eng">
+    <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/muhammedelhalit2-eng&h=70&w=70&fit=cover&mask=circle" width="70" height="70" alt="muhammedelhalit2-eng"/>
   </a>
 </p>
 
 > [!NOTE]
 > Katkıda bulunmak isteyen öğrenciler yöneticiden davet almalı ve katkıları onaylandıktan sonra bu listeye eklenir.
 
-#### Proje Yöneticisi
+#### Proje Yöneticileri
+
 - [trs-1342](https://github.com/trs-1342)
