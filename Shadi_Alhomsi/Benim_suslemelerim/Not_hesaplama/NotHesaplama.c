@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Universite sistemi ile birebir not hesaplam
-
 int main()
 {
-  int quiz,vize,finel,ders;
-  float ort,quiz1,vize1,finel1,lab,lab1,odev,odev1;
+  int quiz, vize, finel, ders, lab, odev;
+  float ort, quiz1, vize1, finel1, lab1, odev1;
 
   while (1){
 
@@ -20,15 +18,15 @@ int main()
   switch(ders){
   case 1:
   printf("Fizikte odev notunu gir : ");
-  scanf("%d",& odev);
+  scanf("%d",&odev);
   odev1 = odev *0.1;
 
   printf("Fizikte lab notunu gir : ");
-  scanf("%d",& lab);
+  scanf("%d",&lab);
   lab1 = lab *0.05;
 
   printf("Fizikte quiz notunu gir : ");
-  scanf("%d",& quiz);
+  scanf("%d",&quiz);
   quiz1 = quiz *0.05;
 
   printf("Fizikte vize notunu gir : ");
@@ -79,7 +77,7 @@ int main()
 
   case 2:
       printf("Matematik quiz notunu gir : ");
-  scanf("%d",& quiz);
+  scanf("%d",&quiz);
   quiz1 = quiz *0.1;
 
   printf("Matematik vize notunu gir : ");
@@ -135,6 +133,7 @@ int main()
       while (getchar() != '\n'); // yanlış girişi temizle
     continue;
     }
-   return 0;
   }
+
+  return 0;
 }
