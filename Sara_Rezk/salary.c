@@ -12,7 +12,8 @@ int main (){
     
     final=egy_salery/working_hours;
     
-    printf("your salary per hour is: %d", final);
+    printf("your salary per hour is: %.2f", final);
     return 0;
+    
 
 }
