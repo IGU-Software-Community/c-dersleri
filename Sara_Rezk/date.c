@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int day, month, year;
+    int day, month, year, age;
     
     printf("Enter a date (day.month.year): ");
     scanf("%d.%d.%d", &day, &month, &year);
@@ -45,7 +45,9 @@ int main() {
         printf("December");
     }
     
-    printf(" %d\n", year);
+    printf(" %d,", year);
+    age=2026-year;
+    printf(" %d years old.", age);
     
     return 0;
 }
