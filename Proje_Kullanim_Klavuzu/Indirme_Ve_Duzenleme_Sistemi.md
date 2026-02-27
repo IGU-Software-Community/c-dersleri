@@ -1,7 +1,7 @@
 # İNDİRME VE DÜZENLEME SİSTEMİ
 
 > [!WARNING]
-> daha detaylı anlatım için lütfen [Proje Kullanım Klavuzu](https://github.com/iguGH2025/c-dersleri/tree/main/Proje_Kullanim_Klavuzu)'na bakınız.
+> daha detaylı anlatım için lütfen [Proje Kullanım Klavuzu](https://github.com/IGU-Software-Community/c-dersleri/tree/main/Proje_Kullanim_Klavuzu)'na bakınız.
 
 > [!CAUTION]
 > projede bulunan `.git` klasörünü **asla dokunmayın**.
@@ -16,7 +16,7 @@ Bu proje doğrudan main branch üzerinde çalışacak şekilde yapılandırılm�
    Daveti kabul ettikten sonra proje kendi bilgisayarına şu şekilde indirilir:
 
 ```
-git clone https://github.com/iguGH2025/c-dersleri.git
+git clone https://github.com/IGU-Software-Community/c-dersleri.git
 cd c-dersleri
 ```
 
@@ -85,6 +85,10 @@ git push origin main
 7. Yönetici Onayı ve Denetim
    Her commit yöneticiler tarafından düzenli olarak gözden geçirilir. Uygun olmayan değişiklikler (örneğin başkasının klasörüne müdahale) geri alınabilir veya silinebilir. Proje bütünlüğü düzenli aralıklarla kontrol edilir.
 
+> [!NOTE]
+> ### Önemli Not
+> Yaptığınız değişiklikleri göndermeden önce, yeni güncellemelerin olup olmadığına bakın. Eğer varsa senkronize edin yoksa gönderin. (Bu konuda AI'dan yardım alabilirsiniz.
+
 > [!WARNING]
 > ### MÜDAHALE
-> Yazdığınız kodlara başkası tarafından müdahale edilirse, dosyalarınızı tekrar düzenleyip gönderin veya durumu [proje yöneticisi](mailto:hattab1342@gmail.com) ne bildirin (email).
+> Yazdığınız kodlara başkası tarafından müdahale edilirse, dosyalarınızı tekrar düzenleyip gönderin veya durumu [proje yöneticisi](mailto:khalil.khattab@ogr.gelisim.edu.tr) ne bildirin (email).

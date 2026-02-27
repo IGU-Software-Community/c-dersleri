@@ -1,6 +1,6 @@
 # C Dersleri (c-dersleri)
 
-## PROJENİN AMACI
+## PROJENİN AMACIh
 Bu proje, İstanbul Gelişim Üniversitesi Yazılım Mühendisliği 1. sınıf öğrencilerinin C dilinde öğrendiklerini uygulamalı şekilde geliştirmesi ve ortak bir GitHub deposu üzerinden paylaşması amacıyla oluşturulmuştur.
 Her katılımcı, kendi adına açılmış bir klasörde çalışarak bireysel katkı yapar. Amaç, birlikte öğrenmek, kod disiplini kazanmak ve Git–GitHub ortamına alışmaktır.
 

@@ -37,4 +37,4 @@
 - [ ] Whatsapp grubunda soru sormak veya fikir önermek.
 - [X] Geliştirici dışında katkı/commit eklemek.
 - [X] Projeye ekleme yapıldığında elle onaylanabilmesi. | s: 05.11.25 | f: 08.11.25
-- [ ] README.md dosyaların güncellenip düzeltilmesi. | s: 07.11.25
+- [X] README.md dosyaların güncellenip düzeltilmesi. | s: 07.11.25 | f: 27.02.26
