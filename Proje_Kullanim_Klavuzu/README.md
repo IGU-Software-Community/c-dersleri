@@ -3,7 +3,7 @@
 > 👋 Merhaba İGÜ Yazılım Mühendisliği öğrencileri!  
 > Bu rehber, **C-Dersleri Topluluk Projesi**ne katkıda bulunurken proje düzenini korumanız için hazırlandı.
 
-- bu rehber sayesinde projeyi bozmadan nasıl ekleme yapabileceğinizi ve olası durumlara karşı nasıl davranılması gerektiğini anlatır.
+- Rehber sayesinde projeyi bozmadan nasıl ekleme yapabileceğinizi ve olası durumlara karşı nasıl davranılması gerektiğini anlatır.
 
 ## Gereksinimler
 
@@ -17,19 +17,19 @@
 	- git kullanıcı bilgisi:
 		- git indirdikten sonra, yapacağınız değişiklikleri adınıza kaydedilmesi için bu komutları ilgili yerlerini kendinize göre uyarlayıp çalıştırın:
 			```
-			git config --global user.name "Adınız Soyadınız"
+			git config --global user.name "Github'taki adınız"
 			git config --global user.email "github_email_adresiniz@example.com"
 			```
 
 	- Git programı hakkında Wiki makalesi (meraklılar için): [Git (Yazılım)](https://tr.wikipedia.org/wiki/Git_(yaz%C4%B1l%C4%B1m))
 
 - [Github](https://github.com/):
-	- bu [adresten](https://github.com/) hesap oluşturun ardından başvurmak için proje yöneticisine danışın veya otomatik kendisi sizi ekler.
+	- bu [adresten](https://github.com/) hesap oluşturun ardından başvurmak için proje yöneticilerine iletişime geçin.
 	- projeye eklenebilmeniz için github'a kayıtlı olan email adresinize davet linkleri gelecektir. (proje katılım linki, topluluk & takım katılım linki).
 
 	- Github platformu hakkında Wiki makalesi (meraklılar için): [Github](https://tr.wikipedia.org/wiki/GitHub)
 
-- [GitHub CLI (gh)](https://cli.github.com/):
+- [GitHub CLI (gh)](https://cli.github.com/) (meraklılar için):
 	- gitHub hesabınızla komut satırından işlem yapabilmenizi sağlar (örneğin: repo klonlama, PR açma, issue oluşturma, login işlemleri).
 	- indirme bağlantıları:
 		windows: `winget install --id GitHub.cli` (bu komutta hata alırsanız bu komutu çalıştırın: `winget update` ardından tekrar deneyin. yine olmazsa [bağlantıdan](https://cli.github.com/) indirebilirsiniz.)
@@ -50,23 +50,26 @@
 	> [!NOTE]
 	> gh aracı zorunlu değildir, isteğe bağlı olarak kurulabilir
 
+	> [!NOTE]
+	> kullandığınız linux'a göre indirme komutu değişebilir, ona göre uygun olanı bulup indirebilirsiniz.
+
 
 ## Proje Düzenleme Aşamaları:
 - indirmek:
-	- projeyi `git clone https://github.com/iguGH2025/c-dersleri.git` komutu ile indirme:
+	- projeyi `git clone https://github.com/IGU-Software-Community/c-dersleri.git` komutu ile indirme:
 		- `git`: programın adı, programı başlatır. sağdaki tüm değerler git programına parametre olarak gider.
 		- `clone`: sağında belirtilen linkteki bulunan projeyi bulunduğunuz diziye indirir.
 		- `https://*`: projenin linki/adresi.
 		- proje linki/adresi yapısı:
 			- `github.com`: [Github](https://github.com/) sitesinin barındığı alan adı (domain).
-			- `iguGH2025`: kullanıcı adı/username.
+			- `IGU-Software-Community`: kullanıcı/topluluk adı/username.
 			- `c-dersleri`: projenin adı, `.git` eklentisi ise projenin `.git` dosyasını çağırır.
 
 - proje yapısı:
 	- projeyi indirdikten sonra bulunduğunuz dizine `c-dersleri` adında bir klasör, ve içinde projeye ait olan tüm verileri barındırır.
 	- `c-dersleri` içinde gizli olan `.git` klasörü tüm projenin beyni ve kalbidir. bozulursa tüm projenin kaybolmasına neden olabilir.
 > [!WARNING]
-> projede bulunan `.git` klasörünü <ins>**asla dokunmayın**</ins>. bozulması halinde proje yöneticisine danışın.
+> projede bulunan `.git` klasörünü <ins>**asla dokunmayın**</ins>. bozulması halinde proje yöneticisine danışın ve yaptığınız güncellemeleri projeye yüklemeyin.
 
 - projeyi düzenleme:
 	- eğer ilk kez düzenliyorsanız:
@@ -85,7 +88,8 @@
 		- diğer klasörleri asla dokunmayacaksınız, sadece kendinize ait oluşturduğunuz klasöre girip düzenleme yapacaksınız.
 
 - projeyi github'a atmak:
-	- projeyi github'a atmadan önce, github'taki son güncellemeleri local, yani düzenleme yaptığınız klasöre indirin:
+	- eğer site üzerinden tercih ediyorsanız, oradan yüklemeleri yapabilirsiniz. hatta orada bile dosyaları oluşturabilirsiniz.
+	- eğer terminal üzerinden tercih ediyorsanız: projeyi github'a atmadan önce, github'taki son güncellemeleri local, yani düzenleme yaptığınız klasöre indirin:
 		- komutlar (bunlar örnek, kendinize göre ayarlayın. mesela Halil_Hattab yerine Adınız_Soyadınız olarak ayarlayın.) :
 		```bash
 		# 1. uzak depodaki (GitHub) son değişiklikleri getirir
@@ -105,7 +109,7 @@
 		git push origin main
 		```
 		- `git fetch` ve `git pull`:
-			- bu iki komut, [uzak depodaki](https://github.com/iguGH2025/c-dersleri/) son değişiklikleri indirip kendi bilgisayarındaki sürümle birleştirir.
+			- bu iki komut, [uzak depodaki](https://github.com/IGU-Software-Community/c-dersleri/) son değişiklikleri indirip kendi bilgisayarındaki sürümle birleştirir.
 
 		> ilk push işleminde GitHub sizden kullanıcı adı ve Personal Access Token isteyebilir. Token, GitHub profilinizde → Ayarlar → Geliştirici Ayarları → Kişisel Erişim Jetonları → Fine-grained tokens kısmından oluşturulur. (AI yardımı alabilirsiniz.)
 
@@ -125,7 +129,7 @@
 
 ---
 
-## Proje yöneticisi
+## Proje Yöneticileri
 - iletişime geçmek isterseniz:
 	- [Github](https://github.com/trs-1342)
-	- [hattab1342@gmail.com](mailto:hattab1342@gmail.com)
+	- [hattab1342@gmail.com](mailto:khalil.khattab@ogr.gelisim.edu.tr)
