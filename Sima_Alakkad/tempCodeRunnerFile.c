@@ -7,7 +7,7 @@
 
 int main()
 {
-    FILE *pFile = fopen("C:\\Users\\Sima\\Desktop\\output.txt", "w");
+    FILE *pFile = fopen("", "w");
 
     char text[] = "THIS IS FOR TESTING\nWRITE A FILE!";
 
