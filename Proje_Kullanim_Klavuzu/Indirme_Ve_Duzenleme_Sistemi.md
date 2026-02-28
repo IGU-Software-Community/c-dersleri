@@ -59,6 +59,17 @@ git rebase --continue
 
 5. Klasör Ekleme ve Düzenleme
    Her öğrenci yalnızca kendi klasöründe çalışmalıdır. Klasör adı Ad_Soyad formatında olmalı, Türkçe karakter kullanılmamalıdır.
+   Örnek yapı:
+
+```text
+ana proje dizini /
+│
+├─ Halil_Hattab   <== örnek klasör adı
+├─ CanerSen       <== örnek klasör adı
+├─ Ayse-yilmaz    <== örnek klasör adı
+├─ esma-kara      <== örnek klasör adı
+└─ README.md      <== proje bilgilendirmesi
+```
 
 ```
 mkdir Ad_Soyad

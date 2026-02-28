@@ -1,6 +1,6 @@
 # C Dersleri (c-dersleri)
 
-## PROJENİN AMACIh
+## PROJENİN AMACI
 Bu proje, İstanbul Gelişim Üniversitesi Yazılım Mühendisliği 1. sınıf öğrencilerinin C dilinde öğrendiklerini uygulamalı şekilde geliştirmesi ve ortak bir GitHub deposu üzerinden paylaşması amacıyla oluşturulmuştur.
 Her katılımcı, kendi adına açılmış bir klasörde çalışarak bireysel katkı yapar. Amaç, birlikte öğrenmek, kod disiplini kazanmak ve Git–GitHub ortamına alışmaktır.
 
@@ -19,22 +19,6 @@ Her katılımcı, kendi adına açılmış bir klasörde çalışarak bireysel k
 ## PROJE HAKKINDA GEREKLİ DOKÜMANLAR
 
 ### [Katılım Kuralları](./Proje_Kullanim_Klavuzu/Katilim_Kurallari.md)
-
-### PROJE YAPISI
-
-Her katılımcı için proje ana dizininde bir klasör bulunur.
-
-Örnek yapı:
-
-```text
-ana proje dizini /
-│
-├─ Halil_Hattab   <== örnek klasör adı
-├─ CanerSen       <== örnek klasör adı
-├─ Ayse-yilmaz    <== örnek klasör adı
-├─ esma-kara      <== örnek klasör adı
-└─ README.md      <== proje bilgilendirmesi
-```
 
 ### İNDİRME VE DÜZENLEME SİSTEMİ
 
