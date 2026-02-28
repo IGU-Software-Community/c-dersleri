@@ -7,12 +7,11 @@
 - main.c: ana dosya.
 - README.md: rehber dosyası.
 
-## Eklenen İşlevler
+## TODO List
 
-- 4 işlemli hesap makinesi
-
-## Eklenecek İşlevler / TODO List
-- Fonksiyonlu yapı
-- Basit terminal komutlarını öğreten küçük menu
-- Açıklayıcı yorum satırları
-- Sade kod yazımı
+- [X] 4 işlemli hesap makinesi
+- [X] Açıklayıcı yorum satırları
+- [] Hesap işlevi için fonksiyonlu yapı eklemek
+- [] Basit terminal komutlarını öğreten küçük menu (ls, cd, mkdir, pwd, clear vb.)
+- [] Sade kod yazımı
+- [] C dilini konulara göre anlatan rehber menu (1. konu: degikenler nedir, 2. konu: printf ve scanf nedir vb.)
