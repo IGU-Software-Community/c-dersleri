@@ -15,28 +15,29 @@ int main()
 
     // cumle icinde ' ' (bolsuk) tespit edilirse kelime var demektir.
 
-    char* cumle[500];
-    char bosluk[1]=" ";
+
+    // NOT: onceki commit'te hata * isaretini yazmis olmamdi.
+
+    char cumle[500];
+    int uzunluk, i;
 
     // ^\n: alt satira gecene kadar her seyi oku/al
     // []: karakter kumesi, yani scanf'e hangi kurallar altinda okuyacagini soyleriz
-    printf("lutfen cumle yaziniz: "); scanf("%[^\n]", cumle);
 
-    printf("\ncumleniz:\n\t%s", &cumle);
-    // strlen: icindeki kelime uzunlugunu soyler
-    int uzunluk = strlen(cumle);
+    printf("lutfen cumle yaziniz: "); scanf("%[^\n]", cumle);
+    uzunluk = strlen(cumle); // strlen: icindeki kelime uzunlugunu soyler
+
+    printf("\ncumleniz:\n\t%s", cumle);
     printf("\ncumlenizin uzunlugu: %d\n", uzunluk);
 
-    for (int i = 1; i <= uzunluk; i++)
+    for (i = 0; i < uzunluk; i++)
     {
-        printf("%d. : %c \n", i, cumle[i]);
-        if (cumle[i]==bosluk[0])
-        {
-            printf("bosluk tespit edildi\n");
-            // i++;
-        }
-        // i++;
+        if (cumle[i]==' ')
+            printf("SPACE\n");
+        else
+            printf("%c\n", cumle[i]);
     }
+
     printf("\n");
 
     return 0;
