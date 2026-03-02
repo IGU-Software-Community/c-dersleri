@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+void test(char* text, int flag);
+
 int main()
 {
     /*
@@ -33,16 +35,27 @@ int main()
     for (i = 0; i < uzunluk; i++)
     {
         if (cumle[i]==' '){
-            printf("\t%s\n", kelime);
+            // printf("\t%s\n", kelime);
             printf("SPACE\n");
+            test(kelime, 1);
             kelime[0]='\0';
         } else {
             printf("%c\n", cumle[i]);
             kelime[i]+= cumle[i];
+            test(kelime, 0);
         }
     }
 
     printf("\n");
 
     return 0;
+}
+
+
+void test(char* text, int flag){
+    if(flag==1){
+        printf("[%s | FLAG=%d]\n", text, flag);
+    } else if (flag==0){
+        printf("[FLAG=%d]\n", flag);
+    }
 }
