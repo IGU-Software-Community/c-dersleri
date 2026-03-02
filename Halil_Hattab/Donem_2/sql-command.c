@@ -20,8 +20,8 @@ int main()
 
     // NOT: onceki commit'te hata * isaretini yazmis olmamdi.
 
-    char cumle[500], kelime[50];
-    int uzunluk, i;
+    char cumle[500], kelime[99];
+    int uzunluk, i, j=0;
 
     // ^\n: alt satira gecene kadar her seyi oku/al
     // []: karakter kumesi, yani scanf'e hangi kurallar altinda okuyacagini soyleriz
@@ -36,12 +36,14 @@ int main()
     {
         if (cumle[i]==' '){
             // printf("\t%s\n", kelime);
-            printf("SPACE\n");
+            printf("\nSPACE ");
             test(kelime, 1);
-            kelime[0]='\0';
+            j=0;
+            kelime[j]='\0';
         } else {
             printf("%c\n", cumle[i]);
-            kelime[i]+= cumle[i];
+            kelime[j]=cumle[i]; // NOT: onceki hata += operatoru, bu ustune ekler yanina degil... bir diger hata: her kelimede kelime index'ini sifirlamam gerekiyor.
+            j++;
             test(kelime, 0);
         }
     }
@@ -54,8 +56,8 @@ int main()
 
 void test(char* text, int flag){
     if(flag==1){
-        printf("[%s | FLAG=%d]\n", text, flag);
+        printf("[%s | FLAG=%d]\n\n", text, flag);
     } else if (flag==0){
-        printf("[FLAG=%d]\n", flag);
+        // printf("[FLAG=%d]\n", flag);
     }
 }
