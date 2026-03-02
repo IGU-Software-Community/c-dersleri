@@ -18,7 +18,7 @@ int main()
 
     // NOT: onceki commit'te hata * isaretini yazmis olmamdi.
 
-    char cumle[500];
+    char cumle[500], kelime[50];
     int uzunluk, i;
 
     // ^\n: alt satira gecene kadar her seyi oku/al
@@ -32,10 +32,14 @@ int main()
 
     for (i = 0; i < uzunluk; i++)
     {
-        if (cumle[i]==' ')
+        if (cumle[i]==' '){
+            printf("\t%s\n", kelime);
             printf("SPACE\n");
-        else
+            kelime[0]='\0';
+        } else {
             printf("%c\n", cumle[i]);
+            kelime[i]+= cumle[i];
+        }
     }
 
     printf("\n");
