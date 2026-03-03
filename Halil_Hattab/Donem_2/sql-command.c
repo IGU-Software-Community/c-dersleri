@@ -26,7 +26,7 @@ int main()
     // ^\n: alt satira gecene kadar her seyi oku/al
     // []: karakter kumesi, yani scanf'e hangi kurallar altinda okuyacagini soyleriz
 
-    printf("lutfen cumle yaziniz: "); scanf("%[^\n]", cumle);
+    printf("lutfen cumle yaziniz: "); scanf("%499[^\n]", cumle);
     uzunluk = strlen(cumle); // strlen: icindeki kelime uzunlugunu soyler
 
     printf("\ncumleniz:\n\t%s", cumle);
