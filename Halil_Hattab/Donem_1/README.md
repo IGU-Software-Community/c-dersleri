@@ -1,5 +1,5 @@
-# Halil_Hattab
-- bu klasör [Halil Hattab (trs-1342)](https://github.com/trs-1342) tarafından geliştirilmiştir.
+# Halil_Hattab - 1. Dönem
+- bu klasör [Halil Hattab (trs-1342)](https://github.com/trs-1342) tarafından 1. Dönemde geliştirilmiştir.
 
 ## Klasör Yapısı
 
@@ -14,6 +14,9 @@
 
 4. HesapMakinesi.c:
 	- fonksiyonlu hesap makinesi. (_açıkları var_)
+
+5. start.c:
+	- örnek c programlama dosyası.
 
 
 > [!NOTE]
