@@ -16,3 +16,4 @@
 
 # linux ortamından
 .directory
+*.sh
