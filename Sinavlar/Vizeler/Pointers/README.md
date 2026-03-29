@@ -40,8 +40,6 @@ Sobanın sıcak olduğu bilgisi, siz sobaya dokunmadığınız sürece soyut kal
   * [iki_sayi_topla.c](./Pointers1_2/iki_sayi_topla.c)
   * [buyuk_sayi_bul.c](./Pointers1_2/buyuk_sayi_bul.c)
   * [alfabe_yazici.c](./Pointers1_2/alfabe_yazici.c) / [alfabe_tek_dongu.c](./Pointers1_2/alfabe_tek_dongu.c)
-* **🛠️ Scriptler:**
-  * [vize_tekrar_seti.sh](./Pointers1_2/vize_tekrar_seti.sh)
 
 ---
 
