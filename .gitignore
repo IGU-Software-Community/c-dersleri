@@ -13,3 +13,6 @@
 # diger yuklenmesini istemedikleriniz:
 
 *.exe
+
+# linux ortamından
+.directory
