@@ -1,36 +1,71 @@
 # Vizeler
 
-Bu klasör, C programlama dili vize sınavlarına hazırlık amacıyla oluşturulmuş ders notlarını ve uygulama örneklerini içermektedir.
+- Bu klasör vizelere hazırlık konuları için oluşturuldu.
 
-## 📂 Proje Yapısı
+## Vizelere Hazırlık
 
-### 📝 Çalışma Notları (Markdown)
-- **[Pointers.md](./Pointers.md)**: İşaretçilerin temelleri, adres operatörleri (`&`, `*`) ve tür uyumu.
-- **[Pointers2.md](./Pointers2.md)**: Bellek takibi (tracing), fonksiyonlara işaretçi gönderimi ve dizi erişimi.
+Sevgili arkadaşlar, vizelere en iyi çalışma uygulayarak çalışmaktır.
+Özellikle pratik gerektiren yazılım alanında öğrendiklerinizde iyi olabilmeniz için **pratik yapmak zorunludur.**
+Sobanın sıcak olduğu bilgisi, siz sobaya dokunmadığınız sürece soyut kalacaktır.
+Önerebileceğim çalışma şekilleri:
+  1. Kağıt üstünde yazmak. (bilgisayara oranla kat ve kat daha iyidir.)
+  2. Bilgisayar üstünde yazmak.
+
+---
+
+## 📑 İçindekiler
+
+- [1. Pointers (İşaretçiler)](#1-pointers-i̇şaretçiler)
+  - [Pointers 1 ve 2 (Temel ve Orta Seviye)](#pointers-1-ve-2-temel-ve-orta-seviye)
+  - [Konu Tekrarı (Sınavlık Karmaşık Sorular)](#konu-tekrarı-sınavlık-karmaşık-sorular)
+  - [Pointers 3 (Mimari ve İletişim)](#pointers-3-mimari-ve-i̇letişim)
+- *(İleride eklenecek diğer konular buraya gelecek...)*
 
 ---
 
-### 💻 Uygulama Kodları (.c)
+## 1. Pointers (İşaretçiler)
 
-#### 1. Temel İşaretçi Kavramları (Kaynak: pointers.pdf)
-- **[kilo_ortuk.c](./kilo_ortuk.c)**: Değişkenlerin sistem tarafından otomatik adreslenmesi (Örtük Adresleme). *(Sayfa 20)*
-- **[kilo_acik.c](./kilo_acik.c)**: Bir değişkenin adresini işaretçiye atama (Açık Adresleme). *(Sayfa 22)*
-- **[tamsayi_isaretci.c](./tamsayi_isaretci.c)**: Tamsayı değişkenleri ve işaretçi ataması üzerine temel çalışma. *(Sayfa 27/31)*
-- **[10prg01.c](./10prg01.c)**: Adres operatörü (`&`) ve işaretçi içeriğinin karşılaştırılması. *(Sayfa 33)*
-- **[10prg02.c](./10prg02.c)**: İşaretçi (pointer) üzerinden orijinal değişkenin değerini değiştirme. *(Sayfa 35)*
-- **[dizi_isaretci_erisim.c](./dizi_isaretci_erisim.c)**: Karakter dizilerine (string) işaretçi aritmetiği kullanarak erişim. *(Sayfa 49)*
+Bu bölüm; bellek yönetimi, işaretçi aritmetiği ve fonksiyonlar arası referans aktarımını kapsamaktadır.
 
-#### 2. Bellek Takibi ve Aritmetik (Kaynak: Pointers2.pdf)
-- **[bellek_takibi.c](./bellek_takibi.c)**: İşaretçi atamaları ve bellek hücrelerinin adım adım takibi (Vize odaklı). *(Sayfa 1)*
-- **[dizi_adres_yazdir.c](./dizi_adres_yazdir.c)**: Dizi elemanlarının bellekte yan yana (ardışık) bulunduğunun kanıtı. *(Sayfa 5)*
-- **[isaretci_aritmetik_test.c](./isaretci_aritmetik_test.c)**: İşaretçinin tuttuğu değer üzerinde toplama ve çıkarma işlemleri. *(Sayfa 7)*
+### Pointers 1 ve 2 (Temel ve Orta Seviye)
+İşaretçilerin temelleri, adres operatörleri (`&`, `*`) ve dizilerin bellekteki ardışık yapısı üzerine notlar ve kodlar.
 
-#### 3. Fonksiyonlar ve Gelişmiş Uygulamalar (Kaynak: Pointers2.pdf)
-- **[fonksiyon_pointer.c](./fonksiyon_pointer.c)**: Fonksiyonlara adres göndererek değer değiştirme (Referansla Çağırma). *(Sayfa 9)*
-- **[iki_sayi_topla.c](./iki_sayi_topla.c)**: İşaretçi değişkenleri üzerinden veri girişi ve matematiksel işlem. *(Sayfa 11)*
-- **[buyuk_sayi_bul.c](./buyuk_sayi_bul.c)**: İşaretçi kullanarak iki sayı arasından büyük olanı belirleme. *(Sayfa 13)*
-- **[alfabe_yazici.c](./alfabe_yazici.c)**: ASCII değerleri ve `ptr++` yöntemiyle alfabeyi belleğe yazma. *(Sayfa 15)*
-- **[alfabe_tek_dongu.c](./alfabe_tek_dongu.c)**: İşaretçi notasyonu `*(ptr + i)` ile tek döngüde dizi yönetimi. *(Sayfa 17)*
+* **📝 Çalışma Notları:**
+  * [Pointers.md](./Pointers/Pointers1_2/Pointers.md) - Temel kavramlar ve tür uyumu.
+  * [Pointers2.md](./Pointers/Pointers1_2/Pointers2.md) - Bellek takibi (tracing) ve fonksiyonlara giriş.
+  * [Pointers3.md](./Pointers/Pointers1_2/Pointers3.md) - İleri aritmetik ve adres aktarımı.
+* **💻 Temel Uygulama Kodları:**
+  * [kilo_ortuk.c](./Pointers/Pointers1_2/kilo_ortuk.c) / [kilo_acik.c](./Pointers/Pointers1_2/kilo_acik.c)
+  * [tamsayi_isaretci.c](./Pointers/Pointers1_2/tamsayi_isaretci.c)
+  * [10prg01.c](./Pointers/Pointers1_2/10prg01.c) / [10prg02.c](./Pointers/Pointers1_2/10prg02.c)
+  * [dizi_isaretci_erisim.c](./Pointers/Pointers1_2/dizi_isaretci_erisim.c)
+* **💻 Orta Seviye ve Algoritmalar:**
+  * [bellek_takibi.c](./Pointers/Pointers1_2/bellek_takibi.c)
+  * [dizi_adres_yazdir.c](./Pointers/Pointers1_2/dizi_adres_yazdir.c)
+  * [isaretci_aritmetik_test.c](./Pointers/Pointers1_2/isaretci_aritmetik_test.c)
+  * [fonksiyon_pointer.c](./Pointers/Pointers1_2/fonksiyon_pointer.c)
+  * [iki_sayi_topla.c](./Pointers/Pointers1_2/iki_sayi_topla.c)
+  * [buyuk_sayi_bul.c](./Pointers/Pointers1_2/buyuk_sayi_bul.c)
+  * [alfabe_yazici.c](./Pointers/Pointers1_2/alfabe_yazici.c) / [alfabe_tek_dongu.c](./Pointers/Pointers1_2/alfabe_tek_dongu.c)
+* **🛠️ Scriptler:**
+  * [vize_tekrar_seti.sh](./Pointers/Pointers1_2/vize_tekrar_seti.sh)
+
+### Konu Tekrarı (Sınavlık Karmaşık Sorular)
+Vize sınavlarında puan belirleyici olan; fonksiyon, dizi, döngü ve işaretçilerin birbiriyle karıştırıldığı "Çıktı Ne Olur?" (Tracing) tarzı zorlu kombinasyonlar.
+
+* **💻 İleri Seviye Kombinasyon Kodları:**
+  * [pointer_ile_dizi_ters_cevir.c](./Pointers/Pointers1_2/Konu_Tekrari/Pointers-1_Pointers-2_PDFleri/pointer_ile_dizi_ters_cevir.c) - *Diziyi adreslerle kendi içinde çevirme.*
+  * [fonksiyon_icinde_aritmetik.c](./Pointers/Pointers1_2/Konu_Tekrari/Pointers-1_Pointers-2_PDFleri/fonksiyon_icinde_aritmetik.c) - *Değer ve adres artırımı farkı.*
+  * [isaretci_dizisi_ve_stringler.c](./Pointers/Pointers1_2/Konu_Tekrari/Pointers-1_Pointers-2_PDFleri/isaretci_dizisi_ve_stringler.c) - *Array of pointers matıngı.*
+  * [zorlu_bellek_takibi_quiz.c](./Pointers/Pointers1_2/Konu_Tekrari/Pointers-1_Pointers-2_PDFleri/zorlu_bellek_takibi_quiz.c) - *Kağıt kalem gerektiren karmaşık swap ve atamalar.*
+
+### Pointers 3 (Mimari ve İletişim)
+Gösterici aritmetiğinin arka planı (bayt hesabı), dizilerin pointer denkliği ve fonksiyonlar arası kalıcı veri aktarımı.
+
+* **💻 Pass by Reference (Adres Aktarımı) Kodları:**
+  * [aritmetik_byte_hesabi.c](./Pointers/Pointers3/aritmetik_byte_hesabi.c) - *Tip bazlı bellek atlama hesapları.*
+  * [dizi_pointer_denklik.c](./Pointers/Pointers3/dizi_pointer_denklik.c) - *Dizi adının pointer olarak fonksiyona geçişi.*
+  * [deger_vs_adres_gecisi.c](./Pointers/Pointers3/deger_vs_adres_gecisi.c) - *Pass by value vs. Pass by reference farkı.*
+  * [gercek_swap_islemi.c](./Pointers/Pointers3/gercek_swap_islemi.c) - *Adreslerle kalıcı yer değiştirme.*
 
 ---
-*Not: Bu dökümanlar üniversite ders notları referans alınarak vize hazırlığı için düzenlenmiştir.*
