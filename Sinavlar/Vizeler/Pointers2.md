@@ -7,7 +7,8 @@ Bir işaretçi başka bir işaretçiye atanabilir. Bu durumda her iki işaretçi
 
 * **Örnek:** `p3 = &b;` ve ardından `p2 = p3;` işlemi yapılırsa, artık hem `p2` hem de `p3` değişkenleri `b` değişkeninin adresini tutar. Birinde yapılan değişiklik diğerini de etkiler çünkü her ikisi de aynı "kutuyu" göstermektedir.
 
-
+> **🔍 Uygulama İçin Bakınız:**
+> * `bellek_takibi.c`: Birden fazla işaretçinin birbiriyle etkileşimini ve bellek değişimini adım adım gösterir.
 
 ## 2. Parantezlerin Önemi ve Öncelik Sırası²
 Sınavlarda en çok puan kaybettiren noktalardan biri `*` ve `++` operatörlerinin birlikte kullanımıdır:
@@ -16,11 +17,17 @@ Sınavlarda en çok puan kaybettiren noktalardan biri `*` ve `++` operatörlerin
 
 **Hocanın Sorabileceği Detay:** `b` değişkeninin değeri 20 ise ve `p2` onu gösteriyorsa; `(*p2)++` işlemi sonrası `b` değeri 21 olur.
 
+> **🔍 Uygulama İçin Bakınız:**
+> * `bellek_takibi.c`: Kodun içindeki artış işlemlerini (`(*p2)++`) takip ederek test edebilirsiniz.
+
 ## 3. ASCII ve Karakter İşaretçileri
 Bilgisayar için harfler aslında sayılardan ibarettir. Örneğin, 'A' harfinin sayısal karşılığı **ASCII Tablosunda³** 65'tir.
 
 * Bir döngü içinde `*ptr = 65 + x;` yapıldığında ve `x` her seferinde arttırıldığında, işaretçinin gösterdiği bellek hücrelerine sırasıyla 'A', 'B', 'C' gibi harfler yazılır.
 * `ptr++` komutu ile işaretçi bir sonraki bellek hücresine (bir sonraki harfin yerine) zıplatılır.
+
+> **🔍 Uygulama İçin Bakınız:**
+> * `alfabe_yazici.c`: İşaretçi kullanarak A'dan Z'ye harfleri nasıl belleğe yazdıracağınızı gösterir.
 
 ## 4. Değer Değiştirme (Swap) ve Referansla Çağırma⁴
 Normal fonksiyonlarda bir değişkeni gönderdiğinizde sadece kopyası gider. Ancak iki değişkenin değerini kalıcı olarak değiştirmek (yer değiştirmek) istiyorsanız işaretçi kullanmalısınız.
@@ -28,19 +35,27 @@ Normal fonksiyonlarda bir değişkeni gönderdiğinizde sadece kopyası gider. A
 * Fonksiyona değişkenin kendisi değil, adresi (`&a`, `&b`) gönderilir.
 * Fonksiyon içinde bu adresler kullanılarak asıl bellek hücrelerine ulaşılır ve değerler takas edilir.
 
-
+> **🔍 Uygulama İçin Bakınız:**
+> * `fonksiyon_pointer.c`: Bir fonksiyonun asıl değişken üzerindeki etkisini gösterir.
+> * `iki_sayi_topla.c`: İşaretçilerle veri alıp toplamayı gösterir.
+> * `buyuk_sayi_bul.c`: İşaretçiler üzerinden karşılaştırma mantığını kapsar.
 
 ## 5. İşaretçi ile Dizi Erişimi
 Bir dizinin elemanlarına ulaşmak için sadece indeks (dizi[0]) değil, işaretçi aritmetiği de kullanılır.
 * `ptr = dizi;` atamasından sonra `ptr` üzerinden tüm elemanlar arasında **döngüsel ilerleme⁵** yapılabilir.
 * `ptr++` her dendiğinde bir sonraki dizi elemanına geçilir.
 
+> **🔍 Uygulama İçin Bakınız:**
+> * `dizi_adres_yazdir.c`: Dizi elemanlarının bellekteki yerleşimini kanıtlar.
+> * `isaretci_aritmetik_test.c`: İşaretçi kaydırarak dizi elemanlarına erişimi gösterir.
+> * `alfabe_tek_dongu.c`: İşaretçi kullanarak tek döngüde dizi işlemlerini özetler.
+
 ---
 
 ### 📘 Terimler Sözlüğü (Anlamayanlar İçin)
 
-1.  **Bellek İzleme (Memory Tracing)*:** Kod çalışırken bilgisayarın hafızasında hangi sayının hangi adrese gittiğini adım adım takip etme yöntemi.
-2.  **Öncelik Sırası**:** Matematikteki işlem önceliği gibi, bilgisayarın önce parantez içini mi yoksa yanındaki işareti mi yapacağına karar verme kuralı.
-3.  **ASCII Tablosu***:** Harflerin, rakamların ve sembollerin bilgisayarın anlayacağı sayısal karşılıklarını içeren evrensel liste.
-4.  **Referansla Çağırma (Call by Reference)****:** Bir fonksiyona verinin kopyasını değil, verinin "ev adresini" (referansını) vererek fonksiyona asıl veriyi değiştirme yetkisi verme.
-5.  **Döngüsel İlerleme (Iteration)*****:** Bir listenin veya dizinin elemanları üzerinde tek tek, sırayla gezme işlemi.
+1.  **Bellek İzleme (Memory Tracing):** Kod çalışırken bilgisayarın hafızasında hangi sayının hangi adrese gittiğini adım adım takip etme yöntemi.
+2.  **Öncelik Sırası:** Matematikteki işlem önceliği gibi, bilgisayarın önce parantez içini mi yoksa yanındaki işareti mi yapacağına karar verme kuralı.
+3.  **ASCII Tablosu:** Harflerin, rakamların ve sembollerin bilgisayarın anlayacağı sayısal karşılıklarını içeren evrensel liste.
+4.  **Referansla Çağırma (Call by Reference):** Bir fonksiyona verinin kopyasını değil, verinin "ev adresini" (referansını) vererek fonksiyona asıl veriyi değiştirme yetkisi verme.
+5.  **Döngüsel İlerleme (Iteration):** Bir listenin veya dizinin elemanları üzerinde tek tek, sırayla gezme işlemi.
