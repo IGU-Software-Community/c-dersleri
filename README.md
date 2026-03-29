@@ -35,5 +35,4 @@ Her katılımcı, kendi adına açılmış bir klasörde çalışarak bireysel k
 - [qusaitahan2007-debug](https://github.com/qusaitahan2007-debug)
 - [65SH](https://github.com/65SH)
 - [hansasabbagh07](https://github.com/hansasabbagh07)
-- [esmakaradag](https://github.com/esmakaradag)
 - [canerseyn](https://github.com/canerseyn)
