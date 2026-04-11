@@ -1,99 +1,33 @@
-# Vizeler
+# 🧠 Konu Tekrarı ve Sınav Simülasyonu
 
-Bu klasör vizelere hazırlık konuları için oluşturuldu.
+Bu klasör, vize sınavlarında öğrencileri en çok zorlayan **"Karmaşık Bellek Takibi (Tracing)"** ve birden fazla konunun (Dizi + Döngü + Fonksiyon + Pointer) harmanlandığı soru tiplerine ayrılmıştır.
 
-## Vizelere Hazırlık
+Buradaki kodları bilgisayarda çalıştırmadan önce **mutlaka kağıt üzerinde bellek tabloları çizerek** çıktılarını tahmin etmeye çalışın. Her dosyada cevaplar `/* CEVAPLAR */` bloğunda gizli — önce kendin çöz, sonra kontrol et.
 
-Sevgili arkadaşlar, vizelere en iyi çalışma uygulayarak çalışmaktır.
-Özellikle pratik gerektiren yazılım alanında öğrendiklerinizde iyi olabilmeniz için **pratik yapmak zorunludur.**
-Sobanın sıcak olduğu bilgisi, siz sobaya dokunmadığınız sürece soyut kalacaktır.
-Önerebileceğim çalışma şekilleri:
-  1. Kağıt üstünde yazmak. (Bilgisayara oranla kat ve kat daha iyidir.)
-  2. Bilgisayar üstünde yazmak.
+## 📂 İçerik
 
----
+### [Pointers 1-2 Tekrarları](./Pointers_1-2/)
+Temel ve orta seviye işaretçi bilgilerinin zorlayıcı kombinasyonları:
+* **[pointer_ile_dizi_ters_cevir.c](./Pointers_1-2/pointer_ile_dizi_ters_cevir.c)** - İki uçtan işaretçilerle diziyi kendi içinde tersine çevirme.
+* **[fonksiyon_icinde_aritmetik.c](./Pointers_1-2/fonksiyon_icinde_aritmetik.c)** - Adresi arttırmak (`ptr++`) ile adresteki değeri arttırmak (`(*ptr)++`) arasındaki sınavlık farklar.
+* **[isaretci_dizisi_ve_stringler.c](./Pointers_1-2/isaretci_dizisi_ve_stringler.c)** - Karakter işaretçisi dizileri (Array of Pointers) mantığı.
+* **[zorlu_bellek_takibi_quiz.c](./Pointers_1-2/zorlu_bellek_takibi_quiz.c)** - Kağıt kalem kullanmadan çözülmesi neredeyse imkansız olan, 3. değişken olmadan yapılan takas (swap) ve adres sekme işlemleri.
 
-## 📑 İçindekiler
+### [Pointers 3 Tekrarları](./Pointers3/)
+Fonksiyonlardan adres döndürme ve çoklu referans aktarımı (Pass by Reference) üzerine ileri seviye sınav soruları:
+* **[adres_donduren_arama.c](./Pointers3/adres_donduren_arama.c)** - Fonksiyondan işaretçi döndürmek ve adresler arası çıkarma işlemi (`p - &dizi[0]`) yaparak dizideki konumu (indeksi) bulma.
+* **[coklu_deger_dondurme.c](./Pointers3/coklu_deger_dondurme.c)** - C dilindeki `return` kısıtlamasını aşarak, fonksiyona adres yollayıp birden fazla değeri (en küçük, en büyük, ortalama) aynı anda elde etme.
+* **[karma_isaretci_aritmetigi.c](./Pointers3/karma_isaretci_aritmetigi.c)** - `*p++`, `*(++p)` ve `(*p)++` işlemlerinin dizi üzerinde peş peşe kullanıldığında belleği nasıl manipüle ettiğini gösteren klasik tracing sorusu.
 
-- [1. Pointers 1 ve 2 (Temel ve Orta Seviye)](#1-pointers-1-ve-2-temel-ve-orta-seviye)
-- [2. Konu Tekrarı (Sınavlık Karmaşık Sorular)](#2-konu-tekrarı-sınavlık-karmaşık-sorular)
-- [3. Pointers 3 (Mimari ve İletişim)](#3-pointers-3-mimari-ve-i̇letişim)
-- [4. Pointers 4 (Uygulamalar, const ve Dinamik Bellek)](#4-pointers-4-uygulamalar-const-ve-dinamik-bellek)
-- [5. Pointers 5 (calloc, realloc ve İleri Dinamik Bellek)](#5-pointers-5-calloc-realloc-ve-i̇leri-dinamik-bellek)
+### [Pointers 4 Tekrarları](./Pointers4/)
+`const` pointer kombinasyonları, gerçek/sahte swap tuzağı, string pointer dolaşımı ve `malloc` + fonksiyon birleşimi üzerine sınav soruları:
+* **[const_tracing_quiz.c](./Pointers4/const_tracing_quiz.c)** - `int *const`, `const int *`, `const int *const` — hangi satır derlenir, hangi satır hata verir? Fonksiyon parametrelerinde `const` dahil.
+* **[swap_gercek_vs_sahte.c](./Pointers4/swap_gercek_vs_sahte.c)** - Adres gönderen `swap(&x, &y)` ile değer gönderen `sahteSwap(x, y)` arasındaki "Pass by Value vs Pass by Reference" tuzağı.
+* **[string_pointer_tracing.c](./Pointers4/string_pointer_tracing.c)** - `char *pt` ile string dolaşımı; sesli/sessiz/diğer sayaçlarını iki farklı test string'i ile takip etme.
+* **[malloc_faktoriyel_tracing.c](./Pointers4/malloc_faktoriyel_tracing.c)** - `malloc` + pointer aritmetiği + fonksiyona adres gönderip faktöriyel hesaplama. `0!` edge case'i dahil.
 
----
-
-## 1. Pointers 1 ve 2 (Temel ve Orta Seviye)
-İşaretçilerin temelleri, adres operatörleri (`&`, `*`) ve dizilerin bellekteki ardışık yapısı üzerine notlar ve kodlar.
-
-* **📝 Çalışma Notları:**
-  * [Pointers.md](./Pointers1_2/Pointers.md) - Temel kavramlar ve tür uyumu.
-  * [Pointers2.md](./Pointers1_2/Pointers2.md) - Bellek takibi (tracing) ve fonksiyonlara giriş.
-* **💻 Temel Uygulama Kodları:**
-  * [kilo_ortuk.c](./Pointers1_2/kilo_ortuk.c) / [kilo_acik.c](./Pointers1_2/kilo_acik.c)
-  * [tamsayi_isaretci.c](./Pointers1_2/tamsayi_isaretci.c)
-  * [10prg01.c](./Pointers1_2/10prg01.c) / [10prg02.c](./Pointers1_2/10prg02.c)
-  * [dizi_isaretci_erisim.c](./Pointers1_2/dizi_isaretci_erisim.c)
-* **💻 Orta Seviye ve Algoritmalar:**
-  * [bellek_takibi.c](./Pointers1_2/bellek_takibi.c)
-  * [dizi_adres_yazdir.c](./Pointers1_2/dizi_adres_yazdir.c)
-  * [isaretci_aritmetik_test.c](./Pointers1_2/isaretci_aritmetik_test.c)
-  * [fonksiyon_pointer.c](./Pointers1_2/fonksiyon_pointer.c)
-  * [iki_sayi_topla.c](./Pointers1_2/iki_sayi_topla.c)
-  * [buyuk_sayi_bul.c](./Pointers1_2/buyuk_sayi_bul.c)
-  * [alfabe_yazici.c](./Pointers1_2/alfabe_yazici.c) / [alfabe_tek_dongu.c](./Pointers1_2/alfabe_tek_dongu.c)
-
----
-
-## 2. Konu Tekrarı (Sınavlık Karmaşık Sorular)
-Vize sınavlarında puan belirleyici olan; fonksiyon, dizi, döngü ve işaretçilerin birbiriyle karıştırıldığı "Çıktı Ne Olur?" (Tracing) tarzı zorlu kombinasyonlar.
-
-* *Detaylı bilgi ve kodlar için alt klasöre bakınız:* **[Konu_Tekrari](./Konu_Tekrari/)**
-  * [Pointers 1-2 Kombinasyonları](./Konu_Tekrari/Pointers_1-2/)
-  * [Pointers 3 Kombinasyonları](./Konu_Tekrari/Pointers3/)
-  * [Pointers 4 Kombinasyonları](./Konu_Tekrari/Pointers4/)
-  * [Pointers 5 Kombinasyonları](./Konu_Tekrari/Pointers5/)
-
----
-
-## 3. Pointers 3 (Mimari ve İletişim)
-Gösterici aritmetiğinin arka planı (bayt hesabı), dizilerin pointer denkliği ve fonksiyonlar arası kalıcı veri aktarımı.
-
-* **📝 Çalışma Notu:**
-  * [Pointers3.md](./Pointers3/Pointers3.md) - İleri aritmetik ve adres aktarımı notları.
-* **💻 Mimari ve İletişim Kodları:**
-  * [aritmetik_byte_hesabi.c](./Pointers3/aritmetik_byte_hesabi.c) - *Tip bazlı bellek atlama hesapları.*
-  * [dizi_pointer_denklik.c](./Pointers3/dizi_pointer_denklik.c) - *Dizi adının pointer olarak fonksiyona geçişi.*
-  * [deger_vs_adres_gecisi.c](./Pointers3/deger_vs_adres_gecisi.c) - *Pass by Value vs. Pass by Reference.*
-  * [gercek_swap_islemi.c](./Pointers3/gercek_swap_islemi.c) - *Adreslerle kalıcı yer değiştirme işlemi.*
-
----
-
-## 4. Pointers 4 (Uygulamalar, const ve Dinamik Bellek)
-İşaretçilerin pratik uygulamaları (sıralama, string dolaşımı, faktöriyel), `const` belirtecinin pointer kombinasyonları ve dinamik bellek yönetiminin (`malloc`, `free`) temelleri.
-
-* **📝 Çalışma Notu:**
-  * [Pointers4.md](./Pointers4/Pointers4.md) - Tüm konuların detaylı anlatımı, tablolar ve terimler sözlüğü.
-* **💻 Uygulama Kodları:**
-  * [pointer_siralama.c](./Pointers4/pointer_siralama.c) - *Üç sayıyı swap ile küçükten büyüğe sıralama.*
-  * [sesli_sessiz_sayici.c](./Pointers4/sesli_sessiz_sayici.c) - *Pointer ile string dolaşımı ve harf sayma (`fgets`, `\n` temizleme).*
-  * [faktoriyel_hesapla.c](./Pointers4/faktoriyel_hesapla.c) - *Pointer parametresi ile faktöriyel ve `long long` kullanımı.*
-  * [const_pointer_demo.c](./Pointers4/const_pointer_demo.c) - *`int *const`, `const int *`, `const int *const` kombinasyonları.*
-* **💻 Dinamik Bellek Yönetimi:**
-  * [malloc_temel.c](./Pointers4/malloc_temel.c) - *`malloc`, `sizeof`, tür dönüşümü ve NULL kontrolü.*
-  * [dinamik_dizi.c](./Pointers4/dinamik_dizi.c) - *Kullanıcıdan boyut alarak dinamik dizi oluşturma ve `free` ile iade.*
-  * [bellek_adresi_izleme.c](./Pointers4/bellek_adresi_izleme.c) - *Stack vs Heap adres karşılaştırması.*
-
----
-
-## 5. Pointers 5 (calloc, realloc ve İleri Dinamik Bellek)
-`calloc` ile sıfırlanmış bellek ayırma, `realloc` ile mevcut belleği yeniden boyutlandırma, dinamik dizide sıralama ve tüm kavramları birleştiren kapsamlı uygulama.
-
-* **📝 Çalışma Notu:**
-  * [Pointers5.md](./Pointers5/Pointers5.md) - calloc/realloc detaylı anlatımı, karşılaştırma tabloları ve terimler sözlüğü.
-* **💻 Uygulama Kodları:**
-  * [dinamik_dizi_siralama.c](./Pointers5/dinamik_dizi_siralama.c) - *Selection Sort ile dinamik dizi sıralama (pointer aritmetiği).*
-  * [malloc_vs_calloc.c](./Pointers5/malloc_vs_calloc.c) - *malloc (elle sıfırlama) vs calloc (otomatik sıfırlama) karşılaştırması.*
-  * [calloc_kullanici_boyut.c](./Pointers5/calloc_kullanici_boyut.c) - *Kullanıcıdan boyut alarak calloc ile dizi oluşturma.*
-  * [dangling_pointer_demo.c](./Pointers5/dangling_pointer_demo.c) - *`free` sonrası dangling pointer tehlikesi ve `p = NULL` koruması.*
-  * [not_hesaplama_sistemi.c](./Pointers5/not_hesaplama_sistemi.c) - *malloc + realloc + giriş doğrulama ile kapsamlı not hesaplama uygulaması.*
+### [Pointers 5 Tekrarları](./Pointers5/)
+`calloc`/`realloc` davranışı, dangling pointer ve dinamik dizide sıralama adım adım takibi üzerine sınav soruları:
+* **[calloc_dangling_tracing.c](./Pointers5/calloc_dangling_tracing.c)** - `malloc` (çöp veri) vs `calloc` (otomatik 0) ilk değer farkı ve `free` sonrası dangling pointer tehlikesi.
+* **[realloc_tracing.c](./Pointers5/realloc_tracing.c)** - `realloc` ile genişletme/daraltma: eski veri korunur mu? Yeni alan ne içerir? `temp` pointer zorunluluğu.
+* **[selection_sort_tracing.c](./Pointers5/selection_sort_tracing.c)** - `*(a+i)` pointer gösterimi ile Selection Sort; her swap sonrası dizi durumu ve toplam swap sayısı.
